@@ -122,6 +122,7 @@ h1, h2, h3, h4, h5, p {
 
 .menu-nav .link:hover, .menu-nav .link:focus, .contacts .link:hover, .contacts .link:focus, .contacts-item:hover, .contacts-item:focus{
     color: var(--accent-text-color);
+    outline: none;
     
 }
 .contacts .link {
@@ -321,6 +322,7 @@ margin-right: 30px;
 .soc-link a:hover, .soc-link a:focus{
     background-color: var(--accent-background-color);
     fill: #FFFFFF;
+    outline: none;
 }
 
 .soc-link:not(:last-child) {
@@ -350,6 +352,7 @@ margin-right: 30px;
 .clients-item a:hover, .clients-item a:focus{
 fill: var(--accent-text-color);
 border-color: var(--accent-text-color);
+outline: none;
 }
 
 .clients-item:not(:last-child){
@@ -381,6 +384,7 @@ border-color: var(--accent-text-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
 }
 
 .examples-title {
@@ -435,7 +439,10 @@ border-color: var(--accent-text-color);
 .work-examples:focus .examples-animation {
     opacity: 1; 
     transform: translateY(0);
+   
 }
+
+
 .bgr-text {
     font-weight: 400;
     font-size: 18px;
@@ -490,6 +497,7 @@ margin-right: 8px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
     
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
     
 }
 
@@ -517,6 +525,9 @@ margin-right: 8px;
 }
 
 /* Footer */
+.footer-info {
+    display: inline-flex;
+}
 .footer {
     background-color: var(--footer-background-color);
     padding: 60px 0;
@@ -543,15 +554,14 @@ margin-right: 8px;
 }
 
 .footer-logo-adress {
-    display: inline-block;
     margin-right: 70px;
 }
+/* Footer Соц сети */
 .footer-soc {
-    display: inline-block;
-    position: absolute;
+    margin-right: 93px;
     
 }
-.footer-soc-title {
+.footer-soc-title, .mailing-title {
     color: var(--primary-background-color);
     text-transform: uppercase;
     font-weight: 700;
@@ -567,6 +577,49 @@ margin-right: 8px;
 }
 .footer-soc .soc a:hover, .footer-soc .soc a:focus {
     background-color:var(--accent-text-color);
+}
+
+/* Footer E-mail подписка */
+.mailing input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+}
+.mailing input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.mailing-button {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    background-color: var(--accent-background-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-background-color);
+    transition: background-color var(--transition-primary);
+}
+.mailing-button:hover,
+.mailing-button:focus {
+    background-color: #188CE8;
+    outline: none;
+    cursor: pointer;
 }
 
 /* Backrdop */
