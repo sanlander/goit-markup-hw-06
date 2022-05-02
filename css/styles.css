@@ -662,7 +662,8 @@ margin-right: 8px;
     right: 0;
     background-color: transparent;
     border: none;
-    margin: 8px;
+    margin-top: 8px;
+    margin-right: 8px;
     padding: 0;
     cursor: pointer;
 }
