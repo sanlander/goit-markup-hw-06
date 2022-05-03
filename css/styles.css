@@ -122,8 +122,6 @@ h1, h2, h3, h4, h5, p {
 
 .menu-nav .link:hover, .menu-nav .link:focus, .contacts .link:hover, .contacts .link:focus, .contacts-item:hover, .contacts-item:focus{
     color: var(--accent-text-color);
-    outline: none;
-    
 }
 .contacts .link {
     color: var(--second-text-color);
@@ -352,7 +350,6 @@ margin-right: 30px;
 .clients-item a:hover, .clients-item a:focus{
 fill: var(--accent-text-color);
 border-color: var(--accent-text-color);
-outline: none;
 }
 
 .clients-item:not(:last-child){
@@ -384,7 +381,6 @@ outline: none;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
 }
 
 .examples-title {
@@ -497,8 +493,6 @@ margin-right: 8px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
     
     box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-    outline: none;
-    
 }
 
 .button-order {
@@ -512,7 +506,7 @@ margin-right: 8px;
     color: #FFFFFF;
     background-color: var(--accent-background-color);
     cursor: pointer;
-
+    border: none;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -621,7 +615,6 @@ margin-right: 8px;
 .mailing-button:hover,
 .mailing-button:focus {
     background-color: #188CE8;
-    outline: none;
     cursor: pointer;
 }
 .mailing-icon {
